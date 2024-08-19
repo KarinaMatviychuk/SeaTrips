@@ -1,0 +1,51 @@
+mixin nav-a(text)
+    a.nav-link.text-uppercase.fw-400.text-decoration-none(href="#")= text
+
+mixin button-more(text) 
+    p
+        a.text-decoration-none.fw-400.text-uppercase.rounded-pill.d-inline-block(href="#")= text 
+
+mixin block-info(imgSrc, choose, price, about) 
+    img(src=imgSrc, alt="smth")
+    p.fw-400= choose 
+    p.fw-400= price 
+    p.fw-400= about 
+
+
+mixin photo-offer(imgSrc, imgAlt, name, about, price)
+    div.offer-choose.position-relative
+        +star
+        <svg class="icon-bicycle position-absolute">
+            <use xlink:href="#bicycle"></use>
+        </svg>
+        img(src=imgSrc, alt=imgAlt)
+        p.fw-400= name 
+        p.fw-400= about 
+        p.fw-400= price 
+
+
+
+mixin additional-info(name, about, download)
+    div.d-inline-flex
+        <svg class="icon">
+            <use xlink:href="#file"></use>
+        </svg>
+        p.name-add.fw-400.text-white= name 
+    p.file-add.fw-400.px-3 Розмір файла: 10Mb
+    p.fw-400.text-white= about
+    p.button-download.d-inline-flex.align-items-end 
+        a.text-uppercase.fw-400.text-decoration-none.position-relative.text-end(href="#") скачати 
+            <svg class="icon-cloud position-absolute">
+                <use xlink:href="#cloud"></use>
+            </svg>
+
+mixin star 
+    span.position-absolute.star 
+    <svg class="icon-star position-absolute">
+        <use xlink:href="#star"></use>
+    </svg>
+
+
+
+
+

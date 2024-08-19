@@ -1,0 +1,51 @@
+header 
+    div.container-fluid.main-photo
+        div.container.wrapper
+            nav.navbar.navbar-expand-lg
+                a.text-decoration-none.d-flex.align-items-center.logo(href="#")
+                    img(src="../img/logo.png", alt="logo")
+                    p.text-white.fw-500 trips
+                    
+                div.collapse.navbar-collapse#navbarNav.justify-content-end
+                    ul.nav.nav-a
+                        li.nav-item
+                            +nav-a("головна")
+                        li.nav-item
+                            +nav-a("послуги")
+                        li.nav-item
+                            +nav-a("про компанію")
+                        li.nav-item
+                            +nav-a("акції")
+                        li.nav-item
+                            +nav-a("партнери")
+                        li.nav-item
+                            +nav-a("відгуки")
+                        li.nav-item
+                            +nav-a("контакти")
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                script(src="/js/scripts.js")
+
+
+                            
+
+        div.row
+            div.col-12.d-flex.flex-column.align-items-center.justify-content-center.main-info 
+                p.text-white.fw-400.text-uppercase.text-center морські пригоди
+                p.text-white.fw-400.text-center.fst-italic Не важливо, чи Ваша мандрівка належить до елітного рівня чи до економваріанту, туроператор S trips потурбується, щоб Ви залишились задоволеними!
+                +button-more('детальніше')
+
+        div.row 
+            div.col-12.d-flex.flex-column.align-items-center.main-info-choose 
+                p.fw-400.text-uppercase.text-center обери свій план подорожі
+                p.fw-400.fst-italic.text-center Наша фірма -лідер на ринку у своїй сфері
+                p 
+                    a(href="#")
+
+
+
+
+

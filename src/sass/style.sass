@@ -1,0 +1,479 @@
+@import bootstrap
+
+@import helpers/vars
+@import helpers/mixins
+ 
+@import  components/header
+@import  components/footer
+
+
+.wrapper
+    width: 98%
+    +media(768)
+        width: 85%
+
+.main-logo-nav
+    padding: 35px 0
+
+.main-photo
+    background: url('../img/main-photo.png') no-repeat
+    background-size: cover
+    background-position: center top
+    width: 100% 
+
+.logo p 
+    font-size: 36px
+    font-family: "Exo 2"
+
+.nav-a a 
+    font-size: 14px
+    font-family: "Rubik"
+    color: #fff
+
+    &:hover
+        color: #ffb700
+
+
+
+
+
+.main-info 
+    height: 650px
+
+.main-info p:first-child
+    position: relative
+    font-size: 45px
+    +media(768)
+        font-size: 72px
+    font-family: "Rubik"
+    letter-spacing: 1px
+    &::before,
+    &::after
+        display: none
+        content: ""
+        position: absolute
+        left: 23%
+        width: 55%
+        border: 5px solid rgba(255, 255, 255, 0.3)
+        +media(1024)
+            display: block
+    &::before
+        top: -30px
+        height: 40px
+        border-bottom: none
+    &::after
+        bottom: -200px
+        height: 100px
+        border-top: none
+
+
+.main-info p:nth-child(2)
+    width: 90%
+    +media(768)
+        width: 567px
+    font-size: 16px
+    font-family: "Rubik"
+
+.main-info a,
+.island-info a,
+.photo-info a
+    +button-a
+
+.main-info-choose 
+    margin-top: 100px
+    p:first-child
+        width: 320px
+        color: #333
+        font-family: "Rubik"
+        font-size: 36px
+        letter-spacing: 1px
+    p:nth-child(2) 
+        font-size: 16px
+        color: #333
+        font-family: "Rubik"
+    p:nth-child(3)
+        position: relative
+        a:before,
+        a::after
+            position: absolute
+            content: ""
+            width: 15px
+            height: 15px
+            border: 3px solid #000
+            border-top: none
+            border-right: none
+            transform: rotate(-45deg)
+        a::after 
+            top: 10px
+
+
+.background
+    background-color: #f5f8fa
+
+.cards
+    padding-top: 100px
+
+.block-info p:first-child
+    font-size: 36px
+    letter-spacing: 1px
+    color: #333
+    font-family: "Rubik"
+
+.block-info p:nth-child(2)
+    font-size: 16px
+    color: #555
+    font-family: "Rubik"
+
+.block-info a 
+    +button-a
+
+.block-info p:last-child
+    font-size: 13px
+    color: #bbb
+    font-family: "Rubik"
+
+
+.block-choose
+    div
+        height: 90%
+        width: 100%
+        &:hover 
+            background-color: #fff
+            box-shadow: (0px 4px 10.5px rgba(3,20,31,0.05))
+    img
+        padding: 20px
+    p:nth-child(2)
+        font-size: 18px
+        color: #333
+        font-family: "Rubik"
+    p:nth-child(3)
+        font-size: 24px
+        color: #0099ff
+        font-family: "Rubik"
+    p:nth-child(4)
+        padding: 5px
+        width: 230px
+        font-size: 13px
+        color: #999
+        font-family: "Rubik"
+    span
+        +star
+
+.block-choose:hover .more a
+    display: block
+
+.more a 
+    display: none
+    font-size: 12px
+    color: #0099ff
+    font-family: "Rubik"
+
+hr
+    border-top: 2px #dfe3e6 solid
+    margin: 80px 0
+
+
+.island-padding
+    padding-bottom: 70px
+
+.img img
+    width: 100%
+
+.island 
+    font-size: 25px
+    text-align: center
+    +media(1024)
+        font-size: 36px
+        text-align: start
+    color: #333
+    font-family: "Rubik"
+
+.island-info
+    flex-direction: column
+    +media(800)
+        flex-direction: row
+
+.island-info p
+    font-size: 18px
+    color: #333
+    font-family: "Rubik"
+
+.flex
+    +media(425)
+        display: flex
+        justify-content: center
+    +media(1024)
+        justify-content: start
+    column-gap: 10px
+    p:last-child a 
+        font-size: 16px
+        letter-spacing: 1px
+        color: #0099ff
+        font-family: "Rubik"
+        background-color: #f5f8fa
+        border: 1px #0099ff solid
+
+.block-price
+    background-color: #edf2f5
+    +media(1440)
+        height: 170px
+        width: 280px
+    p:first-child
+        font-size: 24px
+        color: #0099ff
+        font-family: "Rubik"
+    p:last-child
+        width: 180px
+        font-size: 13px
+        color: #999
+        font-family: "Rubik"   
+
+
+.photo
+    background: url('../img/wave.png') no-repeat
+    background-position: center top
+    width: 100%
+    background-size: cover
+    padding-top: 80px
+    padding-bottom: 80px
+
+.photo-info
+    p:first-child,
+    p:nth-child(2)
+        font-size: 40px
+        line-height: 50px
+        +media(768)
+            font-size: 56px
+            text-align: left
+        letter-spacing: 2px
+        font-family: "Rubik"
+    p:nth-child(2)
+        color: #0099ff
+
+    p:nth-child(3)
+        +media(768)
+            text-align: left
+        +media(1024)
+            width: 450px
+        font-size: 16px
+        font-family: "PT Sans"
+    p:last-child
+        +media(768)
+            text-align: left
+
+.photo-quote
+    position: relative
+    &::before,
+    &::after
+        display: none
+        content: ""
+        position: absolute
+        width: 200px
+        height: 250px
+        border: 4px solid rgba(225, 225, 225, 0.3)
+        top: 15px
+        +media(1440)
+            display: block
+    &::before
+        border-right: none
+        left: 0
+    &::after
+        border-left: none
+        right: 0
+    p:nth-child(2)
+        font-size: 16px
+        font-family: "Rubik"
+        width: 90%
+        margin-top: 10px
+    p:nth-child(3)
+        font-size: 18px
+        font-family: "Rubik"
+        margin-top: -10px
+    p:nth-child(4)
+        font-size: 14px
+        color: #999
+        font-family: "Rubik"
+        margin-top: -15px
+
+.client 
+    border-radius: 50%
+
+
+.offer-week
+    p:first-child
+        margin-top: 70px
+        font-size: 36px
+        color: #333
+        font-family: "Rubik"
+    p:last-child
+        margin-bottom: 40px
+        font-size: 16px
+        color: #333
+        font-family: "Rubik"
+
+.offer-div
+    div
+        height: 100%
+        width: 100%
+
+.offer-choose span
+    +star
+
+.offer-choose
+    &:hover 
+        background-color: #fff
+    p:nth-child(5)
+        padding: 20px 0 0 20px
+        font-size: 18px
+        color: #333
+        font-family: "Rubik"
+    p:nth-child(6)
+        width: 250px
+        padding: 0 0 0 20px
+        font-size: 13px
+        color: #999
+        font-family: "Rubik"
+    p:nth-child(7)
+        padding: 0 0 20px 20px
+        font-size: 24px
+        color: #0099ff
+        font-family: "Rubik"
+
+.offer-choose:hover .icon-bicycle
+    display: block
+
+.offer-choose:hover:before
+    content: ""
+    position: absolute
+    width: 71px
+    height: 190px
+    background-color: #0099ff
+
+
+
+.add-info p 
+    font-size: 36px
+    color: #333
+    font-family: "Rubik"
+
+.hotels-background
+    background: url("../img/hotels.png") no-repeat
+
+.food-background
+    background: url("../img/food.png") no-repeat
+
+.add-about
+    width: 270px
+    height: 300px
+    position: relative
+    p:nth-child(3)
+        width: 250px
+        font-size: 13px
+        font-family: "Rubik"
+        padding: 10px 0 0 10px
+
+.file-add
+    position: absolute
+    top: 75px
+    left: 55px
+    width: 200px
+    font-size: 14px
+    color: #bbb
+    font-family: "Rubik"
+
+.name-add 
+    width: 150px
+    font-size: 18px
+    font-family: "Rubik"
+
+.download a
+    top: 20px
+
+.button-download a 
+    font-size: 12px
+    color: #ffb700
+    font-family: "Rubik"
+    border: 2px #ffb700 solid
+    width: 105px
+    padding: 9px 15px
+    border-radius: 20px
+
+.question
+    p:first-child
+        margin-top: -13px
+        font-size: 18px
+        letter-spacing: 1px
+        color: #333
+        font-family: "Rubik"
+    p:nth-child(2)
+        width: 150px
+        font-size: 13px
+        color: #999
+        font-family: "Rubik"
+    p:nth-child(3) a
+        font-size: 18px
+        color: #0099ff
+        font-family: "Rubik"
+    p:nth-child(4)
+        font-size: 18px
+        color: #333
+        font-family: "Rubik"
+    p:nth-child(5)
+        margin-top: -15px
+        font-size: 13px
+        color: #999
+        font-family: "PT Sans"
+
+.woman-client
+    margin-top: -15px     
+
+
+.hidden
+    display: none
+
+.icon
+    width: 60px
+    height: 60px
+
+.icon-star
+    width: 25px
+    top: -55px
+    left: 8px
+
+.icon-bicycle
+    fill: #fff
+    display: none
+    width: 50px
+    top: 30px
+    left: 10px
+
+.icon-cloud
+    width: 18px
+    top: -58px
+    left: 8px
+
+
+
+.background-footer
+    background: url("../img/footer-photo.png") no-repeat
+    width: 100%
+    height: 400px
+
+.footer-p
+    background-color: #000
+
+    p 
+        font-size: 13px
+        font-family: "Rubik"    
+
+
+.margin div
+    margin: 10px 0
+
+
+
+
+
+
+
+

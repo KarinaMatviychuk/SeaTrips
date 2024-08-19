@@ -1,0 +1,174 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="css/styles.css")
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        title SeaTrips
+    body
+    <svg width="0" height="0" class="hidden">
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file">
+            <path d="M19 9V17.8C19 18.9201 19 19.4802 18.782 19.908C18.5903 20.2843 18.2843 20.5903 17.908 20.782C17.4802 21 16.9201 21 15.8 21H8.2C7.07989 21 6.51984 21 6.09202 20.782C5.71569 20.5903 5.40973 20.2843 5.21799 19.908C5 19.4802 5 18.9201 5 17.8V6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.0799 3 8.2 3H13M19 9L13 3M19 9H14C13.4477 9 13 8.55228 13 8V3" stroke="#ffb700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+    </svg>
+    <svg width="0" height="0" class="hidden">
+        <symbol fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+            <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path>
+        </symbol>
+    </svg>
+    <svg width="0" height="0" class="hidden">
+        <symbol version="1.1" id="bicycle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+            <path id="circle4604" d="M10,1C9.4477,1,9,1.4477,9,2c0,0.5523,0.4477,1,1,1s1-0.4477,1-1C11,1.4477,10.5523,1,10,1z M8.1445,2.9941c-0.13,0.0005-0.2547,0.0517-0.3477,0.1426l-2.6406,2.5c-0.2256,0.2128-0.2051,0.5775,0.043,0.7637L7,7.75v2.75c-0.01,0.6762,1.0096,0.6762,1,0v-3c0.0003-0.1574-0.0735-0.3057-0.1992-0.4004L7.0332,6.5234l1.818-1.7212l0.7484,0.9985C9.6943,5.9265,9.8426,6.0003,10,6h1.5c0.6761,0.01,0.6761-1.0096,0-1h-1.25L9.5,4L8.9004,3.1992C8.8103,3.0756,8.6685,3,8.5156,2.9941H8.1445z M3,7c-1.6569,0-3,1.3432-3,3s1.3431,3,3,3s3-1.3432,3-3S4.6569,7,3,7z M12,7c-1.6569,0-3,1.3432-3,3s1.3431,3,3,3s3-1.3432,3-3S13.6569,7,12,7z M3,8c1.1046,0,2,0.8954,2,2s-0.8954,2-2,2s-2-0.8954-2-2S1.8954,8,3,8z M12,8c1.1046,0,2,0.8954,2,2s-0.8954,2-2,2s-2-0.8954-2-2S10.8954,8,12,8z"></path>
+        </symbol>
+    </svg>
+    <svg width="0" height="0" class="hidden">
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="cloud">
+            <path d="M14.381 9.02721C14.9767 8.81911 15.6178 8.70588 16.2857 8.70588C16.9404 8.70588 17.5693 8.81468 18.1551 9.01498M7.11616 11.6089C6.8475 11.5567 6.56983 11.5294 6.28571 11.5294C3.91878 11.5294 2 13.4256 2 15.7647C2 18.1038 3.91878 20 6.28571 20H16.2857C19.4416 20 22 17.4717 22 14.3529C22 11.8811 20.393 9.78024 18.1551 9.01498M7.11616 11.6089C6.88706 10.9978 6.7619 10.3369 6.7619 9.64706C6.7619 6.52827 9.32028 4 12.4762 4C15.4159 4 17.8371 6.19371 18.1551 9.01498M7.11616 11.6089C7.68059 11.7184 8.20528 11.9374 8.66667 12.2426" stroke="#ffb700" stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+    </svg>
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main 
+
+        div.container-fluid.background 
+            div.container.wrapper
+                div.row.cards.gx-2
+                    div.col.block-info.d-flex.flex-column.align-items-center.fustify-content-center
+                        div
+                            p.text-uppercase.fw-400.d-flex.align-items-center про нашу компанію
+                            p.fw-400.fst-italic Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                            +button-more('детальніше')
+                            p.fw-400 * - зверніть увагу, зміна ціни може залежати від курсу долара.
+
+                    div.col.block-choose
+                        div.d-flex.flex-column.align-items-center
+                            +block-info('../img/bicycle.png', 'Тур на велосипедах', '335 грн*', 'Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.')
+                        p.more
+                            a.text-uppercase.fw-400.text-decoration-none.text-center(href="#") дивитись усі плани
+
+                    div.col.block-choose
+                        div.d-flex.flex-column.align-items-center.position-relative
+                            +block-info('../img/excursion.png', 'Екскурсія на острів', '500 грн*', 'Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року .')
+                            +star
+                        p.more
+                            a.text-uppercase.fw-400.text-decoration-none.text-center(href="#") дивитись усі плани
+
+                    div.col.block-choose
+                        div.d-flex.flex-column.align-items-center.position-relative
+                            +block-info('../img/order.png', 'Особливе замовлення', '250 грн.*', 'Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші. ')
+                            +star
+                        p.more
+                            a.text-uppercase.fw-400.text-decoration-none.text-center(href="#") дивитись усі плани
+                        
+
+                hr
+
+                
+                div.row.island-padding
+                    div.col-md-12.img.d-flex.justify-content-center.col-lg-4
+                        img.object-fit-none(src="../img/island.png", alt="island")
+
+                    div.col-md-12.island.d-flex.flex-column.justify-content-center.col-lg-8
+                        p.text-uppercase.fw-400 Дивовижний безлюдний острів, який зводить людей з розуму
+                        div.island-info.d-flex
+                            div
+                                p.fw-400.fst-italic.outline Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                                div.flex
+                                    +button-more('замовити тур')
+                                    +button-more('детальніше') 
+                            div.block-price.d-flex.align-items-center.flex-column.justify-content-center
+                                p.fw-400 575 грн./день
+                                p.fw-400.text-center В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
+
+        
+
+        div.container-fluid.photo 
+            div.container.wrapper
+                div.row.d-flex.justify-content-between.align-items-center.photo-row
+                    div.col.photo-info.text-center.d-flex.flex-column.justify-content-center
+                        p.text-uppercase.fw-400.text-white спіймай хвилю
+                        p.text-uppercase.fw-400 живи яскраво!
+                        p.text-white.fw-400 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                        +button-more('детальніше')
+
+                    div.col.photo-quote.text-center.d-flex.flex-column.align-items-center.position-relative
+                        img(src="../img/symbol.png", alt="quotation marks")
+                        p.text-white.fw-400.fst-italic.text-start Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                        p.text-white.fw-400 Олег Набережний
+                        p.fw-400 клієнт
+                        img(src="../img/client.png", alt="client").client
+
+
+
+        div.container-fluid.background 
+            div.container.wrapper 
+                div.row 
+                    div.col-12.offer-week.text-center 
+                        p.fw-400.text-uppercase Спеціальні пропозиції тижня
+                        p.fw-400.fst-italic Гарячі праозиції, по-швидше обирай і поїхали!
+
+                div.row
+                    div.col.offer-div
+                        div
+                            +photo-offer('../img/romentic.png', 'romentic', 'Романтична подорож на 2', 'Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.', '2599 грн.')
+
+                    div.col.offer-div
+                        div
+                            +photo-offer('../img/bicycle-tour.png', 'bicycle-tour', 'Велотур', 'Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!', '555 грн.')
+
+                    div.col.offer-div
+                        div
+                            +photo-offer('../img/on-island.png', 'island', 'На острови!', 'Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!', '1559 грн.')
+
+                    div.col.offer-div
+                        div
+                            +photo-offer('../img/surfing.png', 'surfing', 'Катання на сьорфінгу', 'Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!', '999 грн')
+
+
+
+                hr
+
+
+                div.row.margin
+                    div.col.add-info
+                        p.text-uppercase.fw-400 додаткова інформація
+
+                    div.col.add-about.hotels-background.flex-column.align-items-center.download
+                        div
+                            +additional-info('Графік роботи готелів.xls', 'Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.')
+                    div.col.add-about.food-background.flex-column.align-items-center
+                        div
+                            +additional-info('Інформація про харчування.xls', 'У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.')
+                    div.col.question.text-center.d-flex.flex-column.align-items-center.position-relative 
+                        p.fw-400 задати питання
+                        p.fw-400 Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
+                        p 
+                            a.fw-400.text-decoration-none(href="#") +38 (050) 56 98 511  
+                        p.fw-400 Анна Миколаївна
+                        p.fw-400 консультант
+                        img.woman-client(src="../img/woman.png", alt="client")
+                        img.position-absolute(src="../img/border-question.png", alt="border")
+
+
+
+
+
+        include components/footer.pug
+        

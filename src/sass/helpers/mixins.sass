@@ -1,0 +1,23 @@
+@mixin button-a 
+    color: #fdfcfb
+    font-size: 16px
+    font-family: "Rubik"
+    padding: 15px 30px
+    background-color: #ffb700
+
+    &:hover
+        box-shadow: (0px 4px 10.5px rgba(193,139,1,0.24))
+
+
+=media($size)
+    @media screen and (min-width: #{$size}px)
+        @content
+
+
+@mixin star 
+    display: inline-block
+    border: 50px solid transparent 
+    border-bottom-color: #26cb15
+    transform: rotate(-45deg)
+    top: -50px
+    left: -50px
