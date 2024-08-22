@@ -5,8 +5,8 @@ mixin button-more(text)
     p
         a.text-decoration-none.fw-400.text-uppercase.rounded-pill.d-inline-block(href="#")= text 
 
-mixin block-info(imgSrc, choose, price, about) 
-    img(src=imgSrc, alt="smth")
+mixin block-info(imgSrc, Alt, choose, price, about) 
+    img(src=imgSrc, alt=Alt)
     p.fw-400= choose 
     p.fw-400= price 
     p.fw-400= about 
@@ -21,7 +21,8 @@ mixin photo-offer(imgSrc, imgAlt, name, about, price)
         img(src=imgSrc, alt=imgAlt)
         p.fw-400= name 
         p.fw-400= about 
-        p.fw-400= price 
+        p.fw-400.position-relative= price 
+        a.position-absolute.text-decoration-none.fw-400.text-uppercase.d-inline-block(href="#") замовити
 
 
 

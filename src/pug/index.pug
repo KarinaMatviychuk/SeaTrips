@@ -40,6 +40,11 @@ html(lang="uk")
             <path d="M14.381 9.02721C14.9767 8.81911 15.6178 8.70588 16.2857 8.70588C16.9404 8.70588 17.5693 8.81468 18.1551 9.01498M7.11616 11.6089C6.8475 11.5567 6.56983 11.5294 6.28571 11.5294C3.91878 11.5294 2 13.4256 2 15.7647C2 18.1038 3.91878 20 6.28571 20H16.2857C19.4416 20 22 17.4717 22 14.3529C22 11.8811 20.393 9.78024 18.1551 9.01498M7.11616 11.6089C6.88706 10.9978 6.7619 10.3369 6.7619 9.64706C6.7619 6.52827 9.32028 4 12.4762 4C15.4159 4 17.8371 6.19371 18.1551 9.01498M7.11616 11.6089C7.68059 11.7184 8.20528 11.9374 8.66667 12.2426" stroke="#ffb700" stroke-width="2" stroke-linecap="round"></path>
         </symbol>
     </svg>
+    <svg width="0" height="0" class="hidden">
+        <symbol fill="#0099ff" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="phone">
+            <path d="M0 10.375c0 0.938 0.344 1.969 0.781 3.063s1 2.125 1.438 2.906c1.188 2.063 2.719 4.094 4.469 5.781s3.813 3.094 6.125 3.938c1.344 0.531 2.688 1.125 4.188 1.125 0.75 0 1.813-0.281 2.781-0.688 0.938-0.406 1.781-1.031 2.094-1.781 0.125-0.281 0.281-0.656 0.375-1.094 0.094-0.406 0.156-0.813 0.156-1.094 0-0.156 0-0.313-0.031-0.344-0.094-0.188-0.313-0.344-0.563-0.5-0.563-0.281-0.656-0.375-1.5-0.875-0.875-0.5-1.781-1.063-2.563-1.469-0.375-0.219-0.625-0.313-0.719-0.313-0.5 0-1.125 0.688-1.656 1.438-0.563 0.75-1.188 1.438-1.625 1.438-0.219 0-0.438-0.094-0.688-0.25s-0.5-0.281-0.656-0.375c-2.75-1.563-4.594-3.406-6.156-6.125-0.188-0.313-0.625-0.969-0.625-1.313 0-0.406 0.563-0.875 1.125-1.375 0.531-0.469 1.094-1.031 1.094-1.719 0-0.094-0.063-0.375-0.188-0.781-0.281-0.813-0.656-1.75-0.969-2.656-0.156-0.438-0.281-0.75-0.313-0.906-0.063-0.094-0.094-0.219-0.125-0.375s-0.094-0.281-0.125-0.406c-0.094-0.281-0.25-0.5-0.406-0.625-0.156-0.063-0.531-0.156-0.906-0.188-0.375 0-0.813-0.031-1-0.031-0.094 0-0.219 0-0.344 0.031h-0.406c-1 0.438-1.719 1.313-2.25 2.344-0.5 1.031-0.813 2.188-0.813 3.219z"></path>
+        </symbol>
+    </svg>
         include helpers/vars.pug
         include helpers/mixins.pug
 
@@ -50,7 +55,7 @@ html(lang="uk")
         div.container-fluid.background
             div.container.wrapper
                 div.row.cards.gx-2
-                    div.col.block-info.d-flex.flex-column.align-items-center.fustify-content-center
+                    div.col.block-info.d-flex.flex-column.align-items-center.fustify-content-center#scroll
                         div
                             p.text-uppercase.fw-400.d-flex.align-items-center про нашу компанію
                             p.fw-400.fst-italic Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
@@ -59,33 +64,29 @@ html(lang="uk")
 
                     div.col.block-choose
                         div.d-flex.flex-column.align-items-center
-                            +block-info('../img/bicycle.png', 'Тур на велосипедах', '335 грн*', 'Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.')
-                        p.more
-                            a.text-uppercase.fw-400.text-decoration-none.text-center(href="#") дивитись усі плани
+                            +block-info('img/bicycle.png', 'велотур', 'Тур на велосипедах', '335 грн*', 'Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.')
 
                     div.col.block-choose
                         div.d-flex.flex-column.align-items-center.position-relative
-                            +block-info('../img/excursion.png', 'Екскурсія на острів', '500 грн*', 'Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року .')
+                            +block-info('img/excursion.png', 'екскурсія на острів', 'Екскурсія на острів', '500 грн*', 'Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року .')
                             +star
                         p.more
-                            a.text-uppercase.fw-400.text-decoration-none.text-center(href="#") дивитись усі плани
+                            a.text-uppercase.fw-400.text-decoration-none.text-center.d-block(href="#") дивитись усі плани
 
                     div.col.block-choose
                         div.d-flex.flex-column.align-items-center.position-relative
-                            +block-info('../img/order.png', 'Особливе замовлення', '250 грн.*', 'Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші. ')
+                            +block-info('img/order.png', 'особливе замовлення', 'Особливе замовлення', '250 грн.*', 'Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші. ')
                             +star
-                        p.more
-                            a.text-uppercase.fw-400.text-decoration-none.text-center(href="#") дивитись усі плани
                         
 
                 hr
 
                 
                 div.row.island-padding
-                    div.col-md-12.img.d-flex.justify-content-center.col-lg-4
-                        img.object-fit-none(src="../img/island.png", alt="island")
+                    div.col-md-12.img.d-flex.justify-content-center.col-xl-4
+                        img.object-fit-none(src="img/island.png", alt="острів")
 
-                    div.col-md-12.island.d-flex.flex-column.justify-content-center.col-lg-8
+                    div.col-md-12.island.d-flex.flex-column.justify-content-center.col-xl-8
                         p.text-uppercase.fw-400 Дивовижний безлюдний острів, який зводить людей з розуму
                         div.island-info.d-flex
                             div
@@ -102,18 +103,18 @@ html(lang="uk")
         div.container-fluid.photo 
             div.container.wrapper
                 div.row.d-flex.justify-content-between.align-items-center.photo-row
-                    div.col.photo-info.text-center.d-flex.flex-column.justify-content-center
+                    div.col-xs-12.photo-info.text-center.d-flex.flex-column.justify-content-center.col-sm-6
                         p.text-uppercase.fw-400.text-white спіймай хвилю
                         p.text-uppercase.fw-400 живи яскраво!
                         p.text-white.fw-400 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
                         +button-more('детальніше')
 
-                    div.col.photo-quote.text-center.d-flex.flex-column.align-items-center.position-relative
-                        img(src="../img/symbol.png", alt="quotation marks")
+                    div.col-xs-12.photo-quote.text-center.d-flex.flex-column.align-items-center.position-relative.col-sm-6
+                        img(src="img/symbol.png", alt="quotation marks")
                         p.text-white.fw-400.fst-italic.text-start Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
                         p.text-white.fw-400 Олег Набережний
                         p.fw-400 клієнт
-                        img(src="../img/client.png", alt="client").client
+                        img(src="img/client.png", alt="клієнт").client
 
 
 
@@ -127,19 +128,19 @@ html(lang="uk")
                 div.row
                     div.col.offer-div
                         div
-                            +photo-offer('../img/romentic.png', 'romentic', 'Романтична подорож на 2', 'Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.', '2599 грн.')
+                            +photo-offer('img/romentic.png', 'романтична подорож', 'Романтична подорож на 2', 'Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.', '2599 грн.')
 
                     div.col.offer-div
                         div
-                            +photo-offer('../img/bicycle-tour.png', 'bicycle-tour', 'Велотур', 'Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!', '555 грн.')
+                            +photo-offer('img/bicycle-tour.png', 'велотур', 'Велотур', 'Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!', '555 грн.')
 
                     div.col.offer-div
                         div
-                            +photo-offer('../img/on-island.png', 'island', 'На острови!', 'Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!', '1559 грн.')
+                            +photo-offer('img/on-island.png', 'острів', 'На острови!', 'Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!', '1559 грн.')
 
                     div.col.offer-div
                         div
-                            +photo-offer('../img/surfing.png', 'surfing', 'Катання на сьорфінгу', 'Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!', '999 грн')
+                            +photo-offer('img/surfing.png', 'сьорфінг', 'Катання на сьорфінгу', 'Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!', '999 грн')
 
 
 
@@ -160,11 +161,13 @@ html(lang="uk")
                         p.fw-400 задати питання
                         p.fw-400 Скажіть доброго дня нашому консультанту, і ми з радістю відповімо на Ваші запитання
                         p 
-                            a.fw-400.text-decoration-none(href="#") +38 (050) 56 98 511  
+                            a.fw-400.text-decoration-none.d-inline-block(href="tel: +380505698511") +38 (050) 56 98 511  
                         p.fw-400 Анна Миколаївна
                         p.fw-400 консультант
-                        img.woman-client(src="../img/woman.png", alt="client")
-                        img.position-absolute(src="../img/border-question.png", alt="border")
+                        img.woman-client(src="img/woman.png", alt="клієнт")
+                        <svg class="icon-phone">
+                            <use xlink:href="#phone"></use>
+                        </svg>
 
 
 
