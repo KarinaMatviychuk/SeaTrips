@@ -54,29 +54,31 @@ html(lang="uk")
 
         div.container-fluid.background
             div.container.wrapper
-                div.row.cards.d-flex.justify-content-center
-                    div.col.block-info.d-flex.flex-column.align-items-center.fustify-content-center#scroll
+                div.row.row-cols-1.row-cols-sm-2.row-cols-xl-4.cards
+                    div.block-info.d-flex.flex-column.align-items-center.fustify-content-center#scroll
                         div
                             p.text-uppercase.fw-400.d-flex.align-items-center про нашу компанію
                             p.fw-400.fst-italic Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
                             +button-more('детальніше')
                             p.fw-400 * - зверніть увагу, зміна ціни може залежати від курсу долара.
 
-                    div.col.block-choose
+                    div.block-choose
                         div.d-flex.flex-column.align-items-center
                             +block-info('img/bicycle.png', 'велотур', 'Тур на велосипедах', '335 грн*', 'Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.')
 
-                    div.col.block-choose
+                    div.block-choose
                         div.d-flex.flex-column.align-items-center.position-relative
                             +block-info('img/excursion.png', 'екскурсія на острів', 'Екскурсія на острів', '500 грн*', 'Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року .')
                             +star
-                        p.more
-                            a.text-uppercase.fw-400.text-decoration-none.text-center.d-block(href="#") дивитись усі плани
 
-                    div.col.block-choose
+                    div.block-choose
                         div.d-flex.flex-column.align-items-center.position-relative
                             +block-info('img/order.png', 'особливе замовлення', 'Особливе замовлення', '250 грн.*', 'Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші. ')
                             +star
+                    p.offset-sm-2.offset-xl-6.col-12.col-sm-8.col-xl-3.more.text-center
+                        a.text-uppercase.fw-400.text-decoration-none(href="#") дивитись усі плани
+
+
                         
 
                 hr

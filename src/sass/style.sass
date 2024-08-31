@@ -39,8 +39,11 @@
 
 
 .main-info
-    margin-top: 30vh
-    margin-bottom: 30vh
+    margin-top: 10vh
+    margin-bottom: 10vh
+    +media(768)
+        margin-top: 30vh
+        margin-bottom: 30vh
     position: relative
     &::before,
     &::after
@@ -118,7 +121,7 @@
     padding-top: 100px
 
 .block-info 
-    max-width: 270px
+    // max-width: 270px
 
 .block-info p:first-child
     font-size: 36px
@@ -142,7 +145,6 @@
 
 
 .block-choose
-    max-width: 270px
     div
         width: 100%
         &:hover 
@@ -167,16 +169,22 @@
     span
         +star
 
+.more 
+
 
 .more a 
+    position: relative
     margin-top: 20px
     font-size: 12px
     color: #0099ff
     font-family: "Rubik"
     transition: 0.3s ease
 
+    +arrow(#069bff)
+
     &:hover
         transform: scale(1.1,1.1)
+
 
 hr
     border-top: 2px #dfe3e6 solid
@@ -312,6 +320,10 @@ hr
         margin-top: -15px
 
 .client 
+    position: absolute
+    bottom: -95px
+    +media(1441)
+        bottom: -120px
     border-radius: 50%
 
 
@@ -329,6 +341,7 @@ hr
 
 .offer-div
     div
+        margin: 0 auto
         height: 100%
         width: 100%
 
@@ -359,12 +372,15 @@ hr
         font-family: "Rubik"
     a
         bottom: 43px
-        left: 170px
+        left: 160px
         font-size: 13px
         letter-spacing: 1px
         color: #ffb700
         font-family: "Rubik"
         transition: 0.3s ease
+
+        +arrow(#ffb906, -15px, -10px)
+
         &:hover
             transform: scale(1.1,1.1)
 
@@ -387,16 +403,17 @@ hr
 
 .hotels-background
     background: url("../img/hotels.png") no-repeat
+    height: 100%
 
 .food-background
     background: url("../img/food.png") no-repeat
+    height: 100%
 
 .add-about
-    width: 270px
-    height: 300px
+    min-width: 250px
     position: relative
     p:nth-child(3)
-        width: 250px
+        max-width: 250px
         font-size: 13px
         font-family: "Rubik"
         padding: 10px 0 0 10px
@@ -417,6 +434,7 @@ hr
 
 .download a
     top: 20px
+    margin-bottom: 30px
 
 .button-download a 
     font-size: 12px

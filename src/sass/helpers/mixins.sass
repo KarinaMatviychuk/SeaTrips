@@ -24,3 +24,26 @@
     transform: rotate(-45deg)
     top: -50px
     left: -50px
+
+@mixin arrow($color, $right-before: 38px, $right-after: 43px)
+    &::before 
+        position: absolute
+        content: ""
+        right: $right-before
+        top: 2px
+        width: 13px
+        height: 13px
+        background-color: transparent
+        border: 1px solid $color
+        border-radius: 50%
+
+    &::after 
+        content: ""
+        position: absolute
+        width: 5px
+        height: 5px
+        top: 6px
+        right: $right-after
+        transform: rotate(-135deg)
+        border-left: 1px solid $color
+        border-bottom: 1px solid $color
