@@ -25,12 +25,12 @@
     top: -50px
     left: -50px
 
-@mixin arrow($color, $right-before: 38px, $right-after: 43px)
+@mixin arrow($color, $right-before: -20px, $right-after: -15px, $top-before: 0px, $top-after: 4px)
     &::before 
         position: absolute
         content: ""
         right: $right-before
-        top: 2px
+        top: $top-before
         width: 13px
         height: 13px
         background-color: transparent
@@ -42,7 +42,7 @@
         position: absolute
         width: 5px
         height: 5px
-        top: 6px
+        top: $top-after
         right: $right-after
         transform: rotate(-135deg)
         border-left: 1px solid $color
